@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/primera"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bici"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/bici"
+        android:layout_alignBottom="@+id/fuente"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/fuente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontPath="fonts/MoonbeamRegular.ttf"
+        android:text="BikeTalks"
+        android:textColor="#61e1e1e1"
+        android:shadowRadius="1.5"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:textSize="45sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="171dp" />
+
+    <Button
+        android:id="@+id/rana"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:onClick="siguiente"
+        android:background="@drawable/sapo"
+        android:layout_above="@+id/alarquin"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Powered by Alarquin Design"
+        android:textColor="#61e1e1e1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/alarquin" />
+
+
+</RelativeLayout>

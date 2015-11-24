@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">cpgfinal</string>
+    <string name="title_activity_tipo">TipoActivity</string>
+    <string name="title_activity_usuario">usuarioActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

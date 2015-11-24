@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.katherine.cpgfinal.Mapa">
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parque El Virrey"
+        android:id="@+id/virrey"
+        android:layout_alignParentTop="@+id/map"
+        android:onClick="virrey"
+        android:visibility="visible"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titan Plaza"
+        android:id="@+id/titan"
+        android:layout_below="@+id/virrey"
+        android:onClick="titan"
+        android:visibility="visible"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carulla 85"
+        android:id="@+id/carulla"
+        android:layout_below="@+id/titan"
+        android:onClick="carulla"
+        android:visibility="visible"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Corferias"
+        android:layout_below="@+id/carulla"
+        android:onClick="corferias"
+        android:visibility="visible"
+        android:id="@+id/corferias"/>
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
